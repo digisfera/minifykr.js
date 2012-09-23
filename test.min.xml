@@ -1,0 +1,3 @@
+<krpano><data name="before">
+This hsould be before the plugins
+</data><plugin url="uuuuu" alturl="aaaaaa" /><plugin url="second" /><container name="test" /></krpano>

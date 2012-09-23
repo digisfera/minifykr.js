@@ -1,0 +1,10 @@
+<krpano>
+
+<include url="before.xml"/>
+<!-- fsdfdsfds -->
+<plugin url="uuuuu"  alturl="aaaaaa"></plugin>
+<plugin url="second">       </plugin>
+
+<include url="after.xml"/>
+
+</krpano>
