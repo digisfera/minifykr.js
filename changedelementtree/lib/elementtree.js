@@ -1,6 +1,7 @@
 /* 
+ Changes done for minifykr.js
  - Removed escaping for text
- - Doesn't sort items
+ - Doesn't sort items (to keep url and alturl order)
 */
 
 
