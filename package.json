@@ -1,0 +1,19 @@
+{
+  "name": "minifykr",
+  "version": "0.0.3",
+  "description": "Concatenate and minify XML files in krpano projects",
+  "main": "lib/minifykr.js",
+  "bin": "bin/minifykr",
+  "dependencies": {
+    "underscore": "~1.4.3",
+    "optimist": "~0.3.5",
+    "sax": "0.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/manuelcabral/minifykr.js",
+  "author": "Manuel Cabral (m.cabral@digisfera.pt)",
+  "license": "BSD"
+}

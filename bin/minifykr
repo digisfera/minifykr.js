@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var minifykr = require('../lib/minifykr');
+var argv = require('optimist').boolean('noEncrypt').argv;
+
+var inputFile = argv._[0] || "main.xml";
+var outputFile = argv._[1];
+var encrypt = !argv.noEncrypt;
+
+minifykr.file(inputFile, outputFile, encrypt);

@@ -1,6 +1,10 @@
 <krpano>
 
 
-	<container name="test"/>
+  <layer type="container" name="test">
+	  <layer type="container" name="inside">
+      <plugin name="pluginhere"/>
+    </layer>
+  </layer>
 
 </krpano>

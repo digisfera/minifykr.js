@@ -3,10 +3,17 @@ minifykr.js
 
 A script to concatenate and minify XML files in [krpano](http://www.krpano.com) projects. 
 
+No tests yet, shamefully.
+
+##Installation
+
+`npm install [-g] minifykr`
 
 ## Usage
 
-`node minifykr.js [ --noEncrypt ] [ inputFile ] [ outputFile ]`
+### As script
+
+`minifykr [ --noEncrypt ] [ inputFile ] [ outputFile ]`
 
 - The default value for `inputFile` is `main.xml`
 
@@ -14,6 +21,13 @@ A script to concatenate and minify XML files in [krpano](http://www.krpano.com) 
 
 - When `--noEncrypt` is specified, the output will be encrypted using `kencrypt`. This requires `kencrypt` to be in the PATH
 
+### As module
+    
+    var minifykr = require('minifykr');
+    
+    var minifiedData = minifykr.data(inputData);
+    
+    minifykr.file(inputFile, outputFile, encrypt)
 
 ## Features
 
@@ -27,6 +41,9 @@ This script recursively transverses all the files which are included in `inputFi
 
 - removes text inside tags which are not &lt;data&gt; or &lt;action&gt;
 
+##Known issues/missing features
+
+ - `<include>` tags inside other tags are not parsed
 
 ## Related projects
 
