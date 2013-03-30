@@ -6,5 +6,6 @@ var argv = require('optimist').boolean('noEncrypt').argv;
 var inputFile = argv._[0] || "main.xml";
 var outputFile = argv._[1];
 var encrypt = !argv.noEncrypt;
+var spriteFile = argv.spriteFile || null;
 
-minifykr.file(inputFile, outputFile, encrypt);
+minifykr.file(inputFile, outputFile, encrypt, spriteFile);

@@ -1,6 +1,6 @@
 {
   "name": "minifykr",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Concatenate and minify XML files in krpano projects",
   "main": "lib/minifykr.js",
   "bin": "bin/minifykr",
@@ -8,7 +8,8 @@
     "underscore": "~1.4.3",
     "optimist": "~0.3.5",
     "sax": "0.3.5",
-    "mkdirp": "~0.3.4"
+    "mkdirp": "~0.3.4",
+    "spritesmith": "git://github.com/Ensighten/spritesmith.git"
   },
   "devDependencies": {},
   "scripts": {

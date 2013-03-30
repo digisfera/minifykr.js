@@ -1,3 +1,3 @@
-var minifykr = require('../minifykr');
+var minifykr = require('../lib/minifykr');
 
-minifykr.file('test.xml');
+minifykr.file('test.xml', null, false, './sprite.png');
