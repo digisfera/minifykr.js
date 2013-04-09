@@ -11,9 +11,12 @@
     "mkdirp": "~0.3.4",
     "spritesmith": "git://github.com/Ensighten/spritesmith.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "~1.5.0",
+    "mocha": "~1.9.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/minifykr.js"
   },
   "repository": "https://github.com/manuelcabral/minifykr.js",
   "author": "Manuel Cabral (m.cabral@digisfera.pt)",
