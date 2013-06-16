@@ -1,6 +1,6 @@
 {
   "name": "minifykr",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Concatenate and minify XML files in krpano projects",
   "main": "lib/minifykr.js",
   "bin": "bin/minifykr",
