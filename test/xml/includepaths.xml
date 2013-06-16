@@ -1,0 +1,6 @@
+<krpano>
+
+  <include url="includepaths2.xml"/>
+  <include url="includepaths/includepaths3.xml"/>
+
+</krpano>

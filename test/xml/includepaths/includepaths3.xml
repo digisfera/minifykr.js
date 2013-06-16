@@ -1,0 +1,6 @@
+<krpano>
+
+  <plugin name="included3"/>
+  <include url="../includepaths4.xml"/>
+
+</krpano>
