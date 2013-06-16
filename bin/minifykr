@@ -8,4 +8,6 @@ var outputFile = argv._[1];
 var encrypt = !argv.noEncrypt;
 var spriteFile = argv.spriteFile || null;
 
-minifykr.file(inputFile, outputFile, encrypt, spriteFile);
+minifykr.file(inputFile, outputFile, encrypt, spriteFile, function(err, success) {
+  if(err) { console.error(err); }
+});

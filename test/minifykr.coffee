@@ -20,3 +20,10 @@ describe 'minifykr', ->
       expected = fs.readFileSync('test/xml/includepaths.expected.xml', {encoding: 'UTF-8'})
       expect(result).to.equal(expected)
       done()
+
+  it 'should encrypt files', (done) ->
+
+    minifykr.file 'test/xml/encrypt.xml', 'test/results/encrypt.result.xml', true, null, (err, success) ->
+      result = fs.readFileSync('test/results/encrypt.result.xml', {encoding: 'UTF-8'})
+      expect(result.indexOf('<encrypted>')).to.equal(0)
+      done()

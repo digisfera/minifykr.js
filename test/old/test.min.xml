@@ -1,3 +1,0 @@
-<krpano><data name="before">
-This hsould be before the plugins
-</data><plugin url="./sprite.png" crop="0|0|38|114" onovercrop="0|0|38|114" ondowncrop="0|0|38|114" /><plugin url="./sprite.png" alturl="./sprite.png" crop="0|114|38|38" onovercrop="0|152|38|38" ondowncrop="0|190|38|38" /><style name="twoactive" crop="0|190|38|38" onovercrop="0|190|38|38" ondowncrop="0|190|38|38" /><layer type="container" name="test"><layer type="container" name="inside"><plugin name="pluginhere" /></layer></layer></krpano>
