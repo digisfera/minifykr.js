@@ -1,0 +1,4 @@
+<krpano>
+  <include url="includemin3.xml"/>
+  <plugin name="includemin2"/>
+</krpano>

@@ -1,0 +1,3 @@
+<krpano>
+  <include url="minifyinvalid2.xml" minify="invalidvalue"/>
+</krpano>
