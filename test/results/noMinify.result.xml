@@ -1,0 +1,8 @@
+<krpano>
+  <!-- Comment that should not be deleted -->
+  <plugin name="nominify2" />
+  <!-- Comment that should not be deleted in minify2 -->
+
+  <plugin name="noMinify" />
+
+</krpano>

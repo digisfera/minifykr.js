@@ -1,0 +1,7 @@
+<krpano>
+  <!-- Comment that should not be deleted -->
+  <include url="noMinify2.xml" />
+
+  <plugin name="noMinify" />
+
+</krpano>
