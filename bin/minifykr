@@ -6,7 +6,8 @@ var argv = require('optimist').boolean('noEncrypt').argv;
 var inputFile = argv._[0] || "main.xml";
 var outputFile = argv._[1];
 var encrypt = !argv.noEncrypt;
+var minify = !argv.noMinify;
 
-minifykr.file(inputFile, outputFile, encrypt, function(err, success) {
+minifykr.file(inputFile, outputFile, encrypt, minify, function(err, success) {
   if(err) { console.error(err); }
 });

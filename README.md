@@ -13,7 +13,7 @@ No tests yet, shamefully.
 
 ### As script
 
-`minifykr [ --noEncrypt ] [ inputFile ] [ outputFile ]`
+`minifykr [ --noEncrypt ] [ --noMinify ] [ inputFile ] [ outputFile ]`
 
 - The default value for `inputFile` is `main.xml`
 
@@ -21,13 +21,15 @@ No tests yet, shamefully.
 
 - When `--noEncrypt` is specified, the output will be encrypted using `kencrypt`. This requires `kencrypt` to be in the PATH
 
+- When `--noMinify` is specified, the output will no be minified. It will be the result of merging all files together.
+
 ### As module
     
     var minifykr = require('minifykr');
     
     var minifiedData = minifykr.data(inputData);
     
-    minifykr.file(inputFile, outputFile, encrypt)
+    minifykr.file(inputFile, outputFile, encrypt, minify)
 
 ## Features
 
