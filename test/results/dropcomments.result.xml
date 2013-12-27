@@ -1,4 +1,1 @@
-<krpano>
-	<!-- comment that should be dropped -->
-  <plugin name="dropcomment1" />
-</krpano>
+<krpano><plugin name="dropcomment1" /></krpano>

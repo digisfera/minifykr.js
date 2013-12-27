@@ -1,0 +1,11 @@
+<krpano><action name="commentinaction2">
+	<!-- Comment in action2.0 -->
+	set(u, i);
+	<!-- Comment in action2.1 -->
+	set(h, j);
+	<!-- Comment in action2.3 -->
+	</action><action name="commentinaction">
+	set(x, y);
+	<!-- Comment in action -->
+	set(z, w);
+	</action></krpano>

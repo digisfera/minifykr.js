@@ -66,3 +66,17 @@ describe 'minifykr', ->
       setTimeout((->
         compareFiles("dropcomments.result.xml", "dropcomments.expected.xml")
         done()), 100)
+
+  it 'should preserve comments inside actions when not minifying', (done) ->
+    minifykr.file "test/xml/commentInAction.xml", "test/results/commentInAction.result.xml", false, false, (err, success) ->
+      #Child files are generated asynchronously. Therefore, we have to wait to be sure that everything worked correctly
+      setTimeout((->
+        compareFiles("commentInAction.result.xml", "commentInAction.expected.xml")
+        done()), 100)
+
+  it 'should delete comments inside actions when minifying', (done) ->
+    minifykr.file "test/xml/commentInAction.xml", "test/results/commentInAction.minified.result.xml", false, true, (err, success) ->
+      #Child files are generated asynchronously. Therefore, we have to wait to be sure that everything worked correctly
+      setTimeout((->
+        compareFiles("commentInAction.minified.result.xml", "commentInAction.minified.expected.xml")
+        done()), 100)

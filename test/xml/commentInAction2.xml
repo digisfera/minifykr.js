@@ -1,0 +1,10 @@
+<krpano>
+	<!-- Outter Comment 2 -->
+	<action name="commentinaction2">
+	<!-- Comment in action2.0 -->
+	set(u, i);
+	<!-- Comment in action2.1 -->
+	set(h, j);
+	<!-- Comment in action2.3 -->
+	</action>
+</krpano>

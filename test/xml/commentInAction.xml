@@ -1,0 +1,10 @@
+<krpano>
+	<!-- Outter Comment 1 -->
+	<include url="commentInAction2.xml"/>
+
+	<action name="commentinaction">
+	set(x, y);
+	<!-- Comment in action -->
+	set(z, w);
+	</action>
+</krpano>
