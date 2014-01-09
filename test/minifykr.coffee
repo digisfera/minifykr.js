@@ -87,3 +87,10 @@ describe 'minifykr', ->
       setTimeout((->
         compareFiles("lineFeed.result.xml", "lineFeed.expected.xml")
         done()), 100)
+
+  it 'should respect formatting in tag attributes - NOT YET FIXED', (done) ->
+    minifykr.file "test/xml/attributeFormatting.xml", "test/results/attributeFormatting.result.xml", false, false, (err, success) ->
+      #Child files are generated asynchronously. Therefore, we have to wait to be sure that everything worked correctly
+      setTimeout((->
+        compareFiles("attributeFormatting.result.xml", "attributeFormatting.expected.xml")
+        done()), 100)
