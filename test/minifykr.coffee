@@ -80,3 +80,10 @@ describe 'minifykr', ->
       setTimeout((->
         compareFiles("commentInAction.minified.result.xml", "commentInAction.minified.expected.xml")
         done()), 100)
+
+  it 'should correctly parse line feeds', (done) ->
+    minifykr.file "test/xml/lineFeed.xml", "test/results/lineFeed.result.xml", false, false, (err, success) ->
+      #Child files are generated asynchronously. Therefore, we have to wait to be sure that everything worked correctly
+      setTimeout((->
+        compareFiles("lineFeed.result.xml", "lineFeed.expected.xml")
+        done()), 100)

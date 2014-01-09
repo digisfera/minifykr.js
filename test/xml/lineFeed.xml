@@ -1,0 +1,9 @@
+<krpano>
+
+	<plugin name="line_feed_plugin" />
+
+	<style name="line_feed_style" css="text-align: center; 
+			color: #FFFFFF;
+			font-size: 14px;
+			font-family: arial, sans-serif;" />
+</krpano>
